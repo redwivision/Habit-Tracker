@@ -14,7 +14,7 @@ Build a Pomodoro Timer (work + break, start/pause/reset).
 
 Store everything in localStorage.
 
-C3,onstraints:
+3,constraints:
 
 Use Vanilla HTML, CSS, JS (no React, no frameworks yet).
 
