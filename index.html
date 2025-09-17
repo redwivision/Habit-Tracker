@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habit Tracker & Pomodoro Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>Productivity Hub</h1>
+            <p>Track your habits and manage your time</p>
+        </header>
+
+        <!-- Main Content Area -->
+        <main>
+            <!-- Habit Tracker Section -->
+            <section id="habit-tracker" class="section">
+                <h2>Habit Tracker</h2>
+                
+                <!-- Add New Habit Form -->
+                <div class="add-habit-form">
+                    <input type="text" id="habit-input" placeholder="Enter a new habit...">
+                    <button id="add-habit-btn">Add Habit</button>
+                </div>
+
+                <!-- Habits List -->
+                <div id="habits-list" class="habits-container">
+                    <!-- Habits will be dynamically added here -->
+                </div>
+            </section>
+
+            <!-- Pomodoro Timer Section -->
+            <section id="pomodoro-timer" class="section">
+                <h2>Pomodoro Timer</h2>
+                
+                <!-- Timer Display -->
+                <div class="timer-display">
+                    <div id="timer-time">25:00</div>
+                    <div id="timer-mode">Work Time</div>
+                </div>
+
+                <!-- Timer Controls -->
+                <div class="timer-controls">
+                    <button id="start-btn">Start</button>
+                    <button id="pause-btn" disabled>Pause</button>
+                    <button id="reset-btn">Reset</button>
+                </div>
+
+                <!-- Timer Settings -->
+                <div class="timer-settings">
+                    <label for="work-duration">Work Duration (minutes):</label>
+                    <input type="number" id="work-duration" value="25" min="1" max="60">
+                    
+                    <label for="break-duration">Break Duration (minutes):</label>
+                    <input type="number" id="break-duration" value="5" min="1" max="30">
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
